@@ -1,4 +1,5 @@
-blessed==1.14.2
+args==0.1.0
+npyscreen==4.10.5
 requests==2.13.0
 six==1.10.0
 wcwidth==0.1.7

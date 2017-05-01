@@ -1,15 +1,5 @@
-from blessed import Terminal
+from caprica.application import Caprica
 
-from caprica.application import Application
-from caprica.states.echo import Echo
-
-app = Application()
-app.push(Echo())
-term = Terminal()
-
-with term.fullscreen():
-    while app.run:
-        print(term.clear)
-        print(app.render())
-        with term.cbreak():
-            app.keypress(term.inkey())
+if __name__ == '__main__':
+    app = Caprica()
+    app.run()
